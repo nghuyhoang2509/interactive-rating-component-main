@@ -1,0 +1,197 @@
+/* Primary */
+
+$Orange: hsl(25, 97%, 53%);
+
+/* Neutral */
+
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+$Dark-Blue1: hsl(210, 32%, 22%);
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: $Very-Dark-Blue;
+    font-family: Overpass, sans-serif;
+    font-size: 15px;
+    width: 100vw;
+
+    .card {
+        border-radius: 30px;
+        padding: 30px;
+        margin: 12px auto;
+        background-color: $Dark-Blue;
+        display: flex;
+        flex-direction: column;
+        max-width: 420px;
+        max-height: 420px;
+        justify-content: left;
+
+        .rating {
+            .star {
+                border-radius: 50%;
+                padding: 12px;
+                background-color: $Dark-Blue1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+            }
+
+            .content {
+                margin: 36px 0px 26px 0px;
+
+                .title {
+                    color: $White;
+                    margin: 20px 0px;
+                }
+
+                .describe {
+                    color: $Light-Grey;
+                    font-weight: 400;
+                }
+            }
+
+            .interactive-rating {
+                margin-top: 36px;
+                margin-bottom: 36px;
+
+                button {
+                    cursor: pointer;
+                    margin-right: 16px;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    background-color: $Dark-Blue1;
+                    outline: none;
+                    border: none;
+                    color: $Light-Grey;
+
+                    &:hover {
+                        background-color: $Orange;
+                        color: $White;
+                    }
+
+                    &:focus {
+                        background-color: $Medium-Grey;
+                        color: $White;
+                    }
+                }
+
+                .star5 {
+                    margin-right: 0;
+                }
+            }
+
+            .submit {
+                cursor: pointer;
+                border-radius: 20px;
+                border: none;
+                height: 45px;
+                width: 100%;
+                background-color: $Orange;
+                color: $White;
+                font-weight: 700px;
+                letter-spacing: 3px;
+
+                &:hover {
+                    color: $Orange;
+                    background-color: $White;
+                }
+            }
+        }
+
+        .thankyou {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .img-thankyou {
+                margin-top: 16px;
+            }
+
+            .your-selected {
+                margin-top: 36px;
+                margin-bottom: 20px;
+                background-color: $Dark-Blue1;
+                padding: 6px 18px;
+                border-radius: 14px;
+                color: $Orange;
+            }
+
+            .content {
+                text-align: center;
+
+                .title {
+                    color: $White;
+                    margin: 16px 0px;
+                }
+
+                .describe {
+                    color: $Medium-Grey;
+                    line-height: 20px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.none {
+    display: none!important;
+}
+
+.show{
+    display: flex!important;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin: 24px;
+
+        .card {
+            .rating {
+                .star {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                .interactive-rating {
+                    button {
+                        height: 40px;
+                        width: 40px;
+                        margin-right: 12px;
+                    }
+
+                    .star5 {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.attribution {
+    color: white;
+}

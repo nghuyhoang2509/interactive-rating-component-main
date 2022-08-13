@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- Rating state start -->
+      <span class="rating">
+        <span class="star">
+          <img class="img-star" alt="star" src="./images/icon-star.svg" />
+        </span>
+        <div class="content">
+          <h2 class="title">How did we do?</h2>
+          <p class="describe">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <div class="interactive-rating">
+          <button class="star1 inter-star">1</button>
+          <button class="star2 inter-star">2</button>
+          <button class="star3 inter-star">3</button>
+          <button class="star4 inter-star">4</button>
+          <button class="star5 inter-star">5</button>
+        </div>
+        <button class="submit">SUBMIT</button>
+      </span>
+      <!-- Thank you state start -->
+      <span class="thankyou">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="error"
+          class="img-thankyou"
+        />
+        <div class="your-selected">
+          You selected
+          <span class="star-change"><!-- Add rating here -->0</span>
+          out of 5
+        </div>
+        <div class="content">
+          <h2 class="title">Thank you!</h2>
+          <p class="describe">
+          We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+            
+          </p>
+        </div>
+      </span>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/in/huy-ho%C3%A0ng-nguy%E1%BB%85n-5b580a247/"
+        >Nguyễn Huy Hoàng</a
+      >.
+    </div>
+  </body>
+  <script src="./script.js
+  "></script>
+</html>

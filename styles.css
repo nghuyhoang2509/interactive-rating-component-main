@@ -1,0 +1,157 @@
+/* Primary */
+/* Neutral */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: Overpass, sans-serif;
+  font-size: 15px;
+  width: 100vw;
+}
+body .card {
+  border-radius: 30px;
+  padding: 30px;
+  margin: 12px auto;
+  background-color: hsl(213deg, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  max-height: 420px;
+  justify-content: left;
+}
+body .card .rating .star {
+  border-radius: 50%;
+  padding: 12px;
+  background-color: hsl(210deg, 32%, 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+}
+body .card .rating .content {
+  margin: 36px 0px 26px 0px;
+}
+body .card .rating .content .title {
+  color: hsl(0deg, 0%, 100%);
+  margin: 20px 0px;
+}
+body .card .rating .content .describe {
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+}
+body .card .rating .interactive-rating {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+body .card .rating .interactive-rating button {
+  cursor: pointer;
+  margin-right: 16px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(210deg, 32%, 22%);
+  outline: none;
+  border: none;
+  color: hsl(217deg, 12%, 63%);
+}
+body .card .rating .interactive-rating button:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .card .rating .interactive-rating button:focus {
+  background-color: hsl(216deg, 12%, 54%);
+  color: hsl(0deg, 0%, 100%);
+}
+body .card .rating .interactive-rating .star5 {
+  margin-right: 0;
+}
+body .card .rating .submit {
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  height: 45px;
+  width: 100%;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700px;
+  letter-spacing: 3px;
+}
+body .card .rating .submit:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+body .card .thankyou {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .card .thankyou .img-thankyou {
+  margin-top: 16px;
+}
+body .card .thankyou .your-selected {
+  margin-top: 36px;
+  margin-bottom: 20px;
+  background-color: hsl(210deg, 32%, 22%);
+  padding: 6px 18px;
+  border-radius: 14px;
+  color: hsl(25deg, 97%, 53%);
+}
+body .card .thankyou .content {
+  text-align: center;
+}
+body .card .thankyou .content .title {
+  color: hsl(0deg, 0%, 100%);
+  margin: 16px 0px;
+}
+body .card .thankyou .content .describe {
+  color: hsl(216deg, 12%, 54%);
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.none {
+  display: none !important;
+}
+
+.show {
+  display: flex !important;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 24px;
+  }
+  body .card .rating .star {
+    height: 40px;
+    width: 40px;
+  }
+  body .card .rating .interactive-rating button {
+    height: 40px;
+    width: 40px;
+    margin-right: 12px;
+  }
+  body .card .rating .interactive-rating .star5 {
+    margin-right: 0;
+  }
+}
+.attribution {
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
